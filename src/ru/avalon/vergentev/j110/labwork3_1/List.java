@@ -1,5 +1,7 @@
 package ru.avalon.vergentev.j110.labwork3_1;
 
+import java.util.Objects;
+
 public class List {
     private Linker head;
     private Linker tail;
@@ -84,7 +86,7 @@ public class List {
     public void keySearch (String key) {
         Linker element = head;
         while (element != null) {
-            if (element.data == key) {
+            if (Objects.equals(element.data, key)) {
                 System.out.println("There is the searching element " + key + " at the list. ");
                 System.out.print('\n');
             }
@@ -96,7 +98,7 @@ public class List {
     public void keySearchAndRemove (String key) {
         Linker element = head;
         Linker previousElement = head;
-        while (element.data != null && element.data != key) {
+        while (element.data != null && !element.data.equals(key)) {
             previousElement = element;
             element = element.next;
         }
