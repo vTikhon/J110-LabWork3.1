@@ -100,8 +100,9 @@ public class List {
             previousElement = element;
             element = element.next;
         }
-
         if (isEmpty()) {
+            head = head.next;
+        } else if (element == head) {
             head = head.next;
         } else {
             previousElement.next = element.next;
