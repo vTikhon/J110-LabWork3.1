@@ -20,13 +20,13 @@ public class Main {
             myList1.extractionFromEnd(); //извлечение из конца списка без удаления
         System.out.print('\n');
         System.out.println("The list is:");
-            myList1.print(); // проверка того что удаления не произошло
+            myList1.print(); //проверка того что удаления не произошло
         System.out.print('\n');
 
         System.out.println("The list with deleted the first and the last elements:");
             myList1.removingFromBegin(); //удаление элемента в начале списка
             myList1.removingFromEnd(); //удаление элемента в конце списка
-            myList1.print(); // выводим оставшийся список на экран
+            myList1.print(); //выводим оставшийся список на экран
 
         System.out.print("Modified list:");
             myList1.modifyElement("GGG"); //Добавляем к элементам списка GGG
@@ -34,7 +34,7 @@ public class Main {
             myList1.keySearch("CCCGGG"); //проверяем есть ли в списке элемент
             myList1.keySearch("cCcGGG"); //проверяем есть ли в списке элемент
             myList1.keySearchAndRemove("CCCGGG"); //удаляем заданный элемент
-        System.out.print("The list with deleted element:");
+        System.out.println("The list with deleted element:");
             myList1.print(); //выводим заданный список с удалённым элементом
     }
 }

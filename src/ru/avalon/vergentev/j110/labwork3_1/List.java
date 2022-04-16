@@ -20,7 +20,6 @@ public class List {
     //метод добавления элемента в начало списка
     public void addToBegin (String data) {
         Linker element = new Linker(data);
-        element.data = data;
         if (isEmpty()) {
             head = element;
             tail = element;
@@ -32,7 +31,6 @@ public class List {
     //метод добавления элемента в конец списка
     public void addToEnd (String data) {
         Linker element = new Linker(data);
-        element.data = data;
         if (isEmpty()) {
             head = element;
         } else {
