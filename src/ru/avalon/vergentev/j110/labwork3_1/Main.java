@@ -16,12 +16,11 @@ public class Main {
             myList1.print(); //выводим сформированный список
 
         System.out.println("The first and the last elements:");
-            myList1.extractionFromBegin(); //извлечение из начала списка без удалени€
-            myList1.extractionFromEnd(); //извлечение из конца списка без удалени€
+            System.out.println(myList1.extractionFromBegin()); //извлечение из начала списка без удалени€
+            System.out.println(myList1.extractionFromEnd()); //извлечение из конца списка без удалени€
         System.out.print('\n');
         System.out.println("The list is:");
             myList1.print(); //проверка того что удалени€ не произошло
-        System.out.print('\n');
 
         System.out.println("The list with deleted the first and the last elements:");
             myList1.removingFromBegin(); //удаление элемента в начале списка
@@ -31,8 +30,9 @@ public class Main {
         System.out.print("Modified list:");
             myList1.modifyElement("GGG"); //ƒобавл€ем к элементам списка GGG
             myList1.print(); //выводим изменЄнный список
-            myList1.keySearch("CCCGGG"); //провер€ем есть ли в списке элемент
-            myList1.keySearch("cCcGGG"); //провер€ем есть ли в списке элемент
+            System.out.println(myList1.keySearch("CCCGGG")); //провер€ем есть ли в списке элемент
+            System.out.println(myList1.keySearch("cCcGGG")); //провер€ем есть ли в списке элемент
+        System.out.print('\n');
             myList1.keySearchAndRemove("CCCGGG"); //удал€ем заданный элемент
         System.out.println("The list with deleted element:");
             myList1.print(); //выводим заданный список с удалЄнным элементом

@@ -6,12 +6,12 @@ public class List {
     private Linker head;
     private Linker tail;
 
-    //Constructors
+    //CONSTRUCTORS
     public List() {
         head = null;
     }
 
-    //Methods
+    //METHODS
     //метод определяющий является ли элемент пустым
     public boolean isEmpty() {
         return head == null;
@@ -54,14 +54,12 @@ public class List {
     }
 
     //метод извлечения элемента из начала списка
-    public void extractionFromBegin () {
-        Linker element = head;
-        System.out.println(element.data);
+    public Linker extractionFromBegin () {
+        return head;
     }
     //метод извлечения элемента из конца списка
-    public void extractionFromEnd () {
-        Linker element = tail;
-        System.out.println(element.data);
+    public Linker extractionFromEnd () {
+        return tail;
     }
 
     //метод удаления элемента из начала списка
@@ -81,15 +79,15 @@ public class List {
     }
 
     //метод определения на содержание заданного значения
-    public void keySearch (String key) {
+    public Linker keySearch (String key) {
         Linker element = head;
         while (element != null) {
             if (Objects.equals(element.data, key)) {
-                System.out.println("There is the searching element " + key + " at the list. ");
-                System.out.print('\n');
+                return element;
             }
             element = element.next;
         }
+        return null;
     }
 
     //метод удаления из списка заданного значения
@@ -124,5 +122,5 @@ public class List {
     }
 
 
-    //Getters and Setters
+    //GETTER AND SETTERS
 }

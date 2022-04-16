@@ -5,10 +5,16 @@ public class Linker {
     public String data;
 
 
-    //Constructors
+    //CONSTRUCTORS
     public Linker(String data) {
         this.data = data;
     }
 
-    //Getters and Setters
+    //METHODS
+    @Override
+    public String toString() {
+        return data;
+    }
+
+    //GETTER AND SETTERS
 }
