@@ -120,7 +120,4 @@ public class List {
             throw new IllegalArgumentException("The list is null. ");
         }
     }
-
-
-    //GETTER AND SETTERS
 }

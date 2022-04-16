@@ -18,9 +18,6 @@ public class Main {
         System.out.println("The first and the last elements:");
             System.out.println(myList1.extractionFromBegin()); //извлечение из начала списка без удаления
             System.out.println(myList1.extractionFromEnd()); //извлечение из конца списка без удаления
-        System.out.print('\n');
-        System.out.println("The list is:");
-            myList1.print(); //проверка того что удаления не произошло
 
         System.out.println("The list with deleted the first and the last elements:");
             myList1.removingFromBegin(); //удаление элемента в начале списка

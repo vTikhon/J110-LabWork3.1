@@ -15,6 +15,4 @@ public class Linker {
     public String toString() {
         return data;
     }
-
-    //GETTER AND SETTERS
 }
