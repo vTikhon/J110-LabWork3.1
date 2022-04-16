@@ -2,52 +2,29 @@ package ru.avalon.vergentev.j110.labwork3_1;
 
 public class Main {
     public static void main(String[] args) {
-        //работа со списком, который формируетс€ с добавлением элементов в начало
+        //работа со списком, который формируетс€ с добавлением элементов в начало и в конец
         List myList1 = new List();
-        myList1.addToBegin("AAA");
-        myList1.addToBegin("BBB");
-        myList1.addToBegin("CCC");
+        myList1.addToEnd("aaa");
+        myList1.addToEnd("bbb");
+        myList1.addToEnd("ccc");
+        myList1.addToEnd("ddd");
         myList1.addToBegin("DDD");
+        myList1.addToBegin("CCC");
+        myList1.addToBegin("BBB");
+        myList1.addToBegin("AAA");
         myList1.print(); //выводим сформированный список
         myList1.extractionFromBegin(); //извлечение из начала списка без удалени€
+        myList1.extractionFromEnd(); //извлечение из конца списка без удалени€
         System.out.print('\n');
         myList1.print(); // проверка того что удалени€ не произошло
         myList1.removingFromBegin(); //удаление элемента в начале списка
+        myList1.removingFromEnd(); //удаление элемента в конце списка
         myList1.print(); // выводим оставшийс€ список на экран
-
-        //работа со списком, который формируетс€ с добавлением элементов в конец
-        List myList2 = new List();
-        myList2.addToEnd("aaa");
-        myList2.addToEnd("bbb");
-        myList2.addToEnd("ccc");
-        myList2.addToEnd("ddd");
-        myList2.print(); //выводим сформированный список
-        myList2.extractionFromEnd(); //извлечение из конца списка без удалени€
-        System.out.print('\n');
-        myList2.print(); // проверка того что удалени€ не произошло
-        myList2.removingFromEnd(); //удаление элемента в конце списка
-        myList2.print(); // выводим оставшийс€ список на экран
-
-        //работа со списком, в котором работает с конкретным элементом
-        List myList3 = new List();
-        myList3.addToEnd("aaAAaa");
-        myList3.addToEnd("bbBBbb");
-        myList3.addToEnd("ccCCcc");
-        myList3.addToEnd("ddDDdd");
-        myList3.print(); //выводим заданный список
-        myList3.keySearch("ccCCcc"); //провер€ем есть ли в списке элемент
-        myList3.keySearch("bBb"); //провер€ем есть ли в списке элемент
-        myList3.keySearchAndRemove("ccCCcc"); //удал€ем заданный элемент
-        myList3.print(); //выводим заданный список с удалЄнным элементом
-
-        //работа со списком, в котором работает с конкретным элементом
-        List myList4 = new List();
-        myList4.addToEnd("aaAAaa");
-        myList4.addToEnd("bbBBbb");
-        myList4.addToEnd("ccCCcc");
-        myList4.addToEnd("ddDDdd");
-        myList4.print(); //выводим заданный список
-        myList4.modifyElement("GGG"); //ƒобавл€ем к элементам списка GGG
-        myList4.print(); //выводим изменЄнный список
+        myList1.keySearch("BBB"); //провер€ем есть ли в списке элемент
+        myList1.keySearch("bBb"); //провер€ем есть ли в списке элемент
+        myList1.keySearchAndRemove("BBB"); //удал€ем заданный элемент
+        myList1.print(); //выводим заданный список с удалЄнным элементом
+        myList1.modifyElement("GGG"); //ƒобавл€ем к элементам списка GGG
+        myList1.print(); //выводим изменЄнный список
     }
 }
